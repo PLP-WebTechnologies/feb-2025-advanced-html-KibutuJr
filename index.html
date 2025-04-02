@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .checkbox-group {
+            display: flex;
+            gap: 10px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 15px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Heading -->
+    <h1>Advanced HTML5 Elements and Forms</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+        <li>HTML5 Semantic Elements</li>
+        <li>Responsive Web Design</li>
+        <li>CSS3 Animations</li>
+        <li>JavaScript ES6 Features</li>
+        <li>Web Accessibility</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Featured Image</h2>
+    <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" alt="Nature Image from Pexels" width="100%">
+
+    <!-- Table of Contacts -->
+    <h2>Contact List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice Johnson</td>
+                <td>123 Main St, NY</td>
+                <td>(123) 456-7890</td>
+                <td>alice@example.com</td>
+            </tr>
+            <tr>
+                <td>Bob Smith</td>
+                <td>456 Elm St, CA</td>
+                <td>(987) 654-3210</td>
+                <td>bob@example.com</td>
+            </tr>
+            <tr>
+                <td>Charlie Brown</td>
+                <td>789 Oak St, TX</td>
+                <td>(555) 123-4567</td>
+                <td>charlie@example.com</td>
+            </tr>
+            <tr>
+                <td>Diana Prince</td>
+                <td>321 Pine St, FL</td>
+                <td>(444) 987-6543</td>
+                <td>diana@example.com</td>
+            </tr>
+            <tr>
+                <td>Edward Norton</td>
+                <td>159 Cedar St, WA</td>
+                <td>(333) 555-7891</td>
+                <td>edward@example.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+        <!-- Name Field -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+        </div>
+
+        <!-- Date Field -->
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <!-- Dropdown Field -->
+        <div class="form-group">
+            <label for="country">Select Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Choose...</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+            </select>
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+            <label>Gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female" required> Female</label>
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+            <label>Interests:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interests" value="sports"> Sports</label>
+                <label><input type="checkbox" name="interests" value="music"> Music</label>
+                <label><input type="checkbox" name="interests" value="travel"> Travel</label>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
